@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Demo for dgtek-map package</title>
+    <style>
+      figure#container-for-map {
+        position: relative;
+        width: 70%;
+        height: 70vh;
+        margin: auto
+      }
+      button {
+        width: max-content;
+        padding: 8px 16px;
+      }
+      select {
+        padding: 8px 16px;
+        border: solid 1px #999;
+        color: #777;
+      }
+      @media screen and (max-width: 600px) {
+        figure#container-for-map {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but this demo for dgtek-portal-map package doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <main style="margin: 0%; overflow: hidden">
+      <figure id="container-for-map"></figure>
+
+      <div style="text-align: center; margin-top: 24px;">
+        <button id="refresh-buildings">REFRESH</button>
+        <button id="get-buildings-list">LIST</button>
+        <button id="get-buildings-for-table">TABLE</button>
+        <button id="get-building-details">DETAILS</button>
+        <button id="get-building-by-address">ADDRESS DETAILS</button>
+        <button id="create-new-building">CREATE NEW BUILDING</button>
+        <button id="update-building-details">UPDATE BUILDING</button>
+        <button id="group-update-button">UPDATE GROUP</button>
+        <button id="delete-building">DELETE BUILDING</button>
+      </div>
+      <div style="text-align: center; margin-top: 24px;">
+        <select id="change-building-status">
+          <option value="LIT">LIT</option>
+          <option value="Footprint">Footprint</option>
+          <option value="BuildCommenced">Build Commenced</option>
+          <option value="ComingSoon">Coming Soon</option>
+          <option value="Other">Not Available</option>
+        </select>
+      </div>
+    </main>
+
+    <script src="dist/main.js"></script>
+  </body>
+</html>

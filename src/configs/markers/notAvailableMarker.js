@@ -1,0 +1,1 @@
+export const notAvailableMarker = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23900;%7D .st1%7Bfill:%23FFFFFF;%7D %3C/style%3E%3Cpath class='st0' d='M12,3L2,12H5V20H19V12H22L12,3M16,13V15H8V13H16Z'%3E%3C/path%3E%3C/svg%3E"
