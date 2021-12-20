@@ -1,4 +1,4 @@
-import { eventsTable } from './config'
+import { eventsTable, buildingEvents } from './config'
 
 export const patchGroupDetails = function (group, details, callback) {
   window[Symbol.for('map.worker')].postMessage({
@@ -7,5 +7,5 @@ export const patchGroupDetails = function (group, details, callback) {
     details
   })
 
-  eventsTable['group-details-updated'] = callback
+  eventsTable[buildingEvents['group-update']] = callback
 }

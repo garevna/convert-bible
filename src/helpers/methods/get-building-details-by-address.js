@@ -1,4 +1,4 @@
-import { eventsTable } from './config'
+import { eventsTable, buildingEvents } from './config'
 
 export const getBuildingDetailsByAddress = function (address, callback) {
   window[Symbol.for('map.worker')].postMessage({
@@ -6,5 +6,5 @@ export const getBuildingDetailsByAddress = function (address, callback) {
     key: address
   })
 
-  eventsTable['building-details-received'] = callback
+  eventsTable[buildingEvents.address] = callback
 }

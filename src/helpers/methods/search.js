@@ -1,4 +1,4 @@
-import { eventsTable } from './config'
+import { eventsTable, buildingEvents } from './config'
 
 import { workerSearchCallback } from '../callbacks'
 
@@ -8,5 +8,5 @@ export const searchAddress = function (address) {
     key: address
   })
 
-  eventsTable['search-result-received'] = workerSearchCallback
+  eventsTable[buildingEvents.search] = workerSearchCallback
 }

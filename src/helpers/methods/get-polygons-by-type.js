@@ -1,4 +1,4 @@
-import { eventsTable } from './config'
+import { eventsTable, buildingEvents } from './config'
 
 export const getPolygonsByType = function (key, callback) {
   window[Symbol.for('map.worker')].postMessage({
@@ -6,5 +6,5 @@ export const getPolygonsByType = function (key, callback) {
     key
   })
 
-  eventsTable[`${key}-polygons-received`] = callback
+  eventsTable[`${key}-${buildingEvents.polygons}`] = callback
 }

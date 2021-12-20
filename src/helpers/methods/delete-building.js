@@ -1,4 +1,4 @@
-import { eventsTable } from './config'
+import { eventsTable, buildingEvents } from './config'
 
 export const deleteBuilding = function (buildingId, callback) {
   window[Symbol.for('map.worker')].postMessage({
@@ -6,5 +6,5 @@ export const deleteBuilding = function (buildingId, callback) {
     key: buildingId
   })
 
-  eventsTable['building-deleted'] = callback
+  eventsTable[buildingEvents.remove] = callback
 }

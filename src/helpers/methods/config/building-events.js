@@ -3,8 +3,8 @@ export const buildingEvents = {
   refresh: 'buildings-refreshed',
   list: 'address-list-received', /* by type only: lit, footprint, build, soon, other */
   table: 'table-data-received', /* by type only: lit, footprint, build, soon, other */
-  details: 'building-details-received',
-  address: 'building-details-received',
+  details: 'building-details-received-by-id',
+  address: 'building-details-received-by-address',
   post: 'new-building-created',
   patch: 'building-details-updated',
   'group-update': 'group-details-updated',

@@ -1,4 +1,4 @@
-import { eventsTable } from './config'
+import { eventsTable, buildingEvents } from './config'
 
 export const putBuildingDetails = function (buildingId, buildingDetails, callback) {
   window[Symbol.for('map.worker')].postMessage({
@@ -7,5 +7,5 @@ export const putBuildingDetails = function (buildingId, buildingDetails, callbac
     data: buildingDetails
   })
 
-  eventsTable['building-details-updated'] = callback
+  eventsTable[buildingEvents.put] = callback
 }

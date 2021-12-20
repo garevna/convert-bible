@@ -1,6 +1,6 @@
 {
   "name": "dgtek-portal-map-package",
-  "version": "1.1.1",
+  "version": "1.1.4",
   "license": "MIT",
   "description": "This package draws DGtek footprint polygons & checks the address to be in the footprint. This package provides a number of methods for creating, searching and updating the buildings data in DB. Uses web-worker,  remote and local  DB. For DGtek provisioning portal only.",
   "main": "./dist/dgtek-portal-map-package.js",
