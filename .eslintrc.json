@@ -1,0 +1,15 @@
+{
+  "parserOptions": {
+    "browser" : true,
+    "node" : true,
+    "es6" : true,
+    "ecmaVersion": "latest"
+  },
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["*.txt"]
+}

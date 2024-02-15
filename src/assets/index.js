@@ -1,9 +1,13 @@
-import { spinner } from './spinner'
-import { icon } from './icon'
-import { geoscapeLogo } from './geoscape-logo'
+import { homenko } from './homenko'
+import { asv } from './asv'
+import { kjb } from './kjb'
+import { web } from './web'
+import { synodal } from './synodal'
 
 export {
-  spinner,
-  icon,
-  geoscapeLogo
+  homenko,
+  asv,
+  kjb,
+  web,
+  synodal
 }

@@ -1,37 +1,36 @@
 {
-  "name": "dgtek-portal-map-package",
-  "version": "1.1.4",
+  "name": "parse-bible-text-to-json",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "This package draws DGtek footprint polygons & checks the address to be in the footprint. This package provides a number of methods for creating, searching and updating the buildings data in DB. Uses web-worker,  remote and local  DB. For DGtek provisioning portal only.",
-  "main": "./dist/dgtek-portal-map-package.js",
+  "description": "This package parse text file and compile json file.",
+  "main": "./public",
   "files": [
     "dist/*",
+    "public/*",
     "README.md"
   ],
   "scripts": {
-    "dev": "cp dist/map.worker.js public && webpack --mode development -w",
+    "clean": "rd /s /q public .cache>nul 2>&1|echo.>nul",
+    "dev": "clean & webpack --mode development -w",
     "prod": "webpack --mode production",
-    "package-dev": "webpack --config webpack.config.package.dgtek-portal-map-package.js --mode development -w",
-    "package": "webpack --config ./worker/webpack.config.worker.js --mode production & webpack --config webpack.config.package.start-worker.js --mode production & webpack --config webpack.config.package.dgtek-portal-map-package.js --mode production",
-    "start-worker": "webpack --config webpack.config.package.start-worker.js --mode production",
-    "worker": "webpack --config ./worker/webpack.config.worker.js --mode production",
-    "worker-dev": "webpack --config ./worker/webpack.config.worker.js --mode development -w"
+    "package-dev": "webpack --config webpack.config.package.js --mode development -w",
+    "package": "webpack --config webpack.config.package.js --mode production",
+    "clear-history": "git fetch --depth=1 & git reflog expire --expire-unreachable=now --all & git gc --aggressive --prune=all"
   },
   "keywords": [
-    "dgtek",
-    "portal",
-    "map",
-    "polygons",
-    "markers",
-    "addresses",
-    "buildings"
+    "bible",
+    "text",
+    "json",
+    "convert",
+    "parse"
   ],
   "author": "garevna <irina.h.fylyppova@gmail.com>",
-  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "dotenv": "^8.2.0",
-    "webpack": "^5.28.0",
-    "webpack-cli": "^4.5.0"
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
   }
 }

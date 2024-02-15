@@ -5,57 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <title>Demo for dgtek-map package</title>
+    <title>Convert text of Bible to json</title>
     <style>
-      figure#container-for-map {
-        position: relative;
-        width: 70%;
-        height: 70vh;
+      main#container {
+        position: absolute;
+        width: 480px;
+        height: 50vh;
         margin: auto
       }
+
       button {
         width: max-content;
         padding: 8px 16px;
+        border-radius: 4px;
+        border: 8px solid transparent;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       select {
         padding: 8px 16px;
         border: solid 1px #999;
         color: #777;
       }
-      @media screen and (max-width: 600px) {
-        figure#container-for-map {
+      /* @media screen and (max-width: 600px) {
+        main#container {
           width: 100%;
         }
-      }
+      } */
     </style>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but this demo for dgtek-portal-map package doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but this demo for parse-bible-text-to-json package doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <main style="margin: 0%; overflow: hidden">
-      <figure id="container-for-map"></figure>
+    <main id="container" style="margin: 0%; overflow: hidden">
 
-      <div style="text-align: center; margin-top: 24px;">
-        <button id="refresh-buildings">REFRESH</button>
-        <button id="get-buildings-list">LIST</button>
-        <button id="get-buildings-for-table">TABLE</button>
-        <button id="get-building-details">DETAILS</button>
-        <button id="get-building-by-address">ADDRESS DETAILS</button>
-        <button id="create-new-building">CREATE NEW BUILDING</button>
-        <button id="update-building-details">UPDATE BUILDING</button>
-        <button id="group-update-button">UPDATE GROUP</button>
-        <button id="delete-building">DELETE BUILDING</button>
-      </div>
-      <div style="text-align: center; margin-top: 24px;">
-        <select id="change-building-status">
-          <option value="LIT">LIT</option>
-          <option value="Footprint">Footprint</option>
-          <option value="BuildCommenced">Build Commenced</option>
-          <option value="ComingSoon">Coming Soon</option>
-          <option value="Other">Not Available</option>
-        </select>
-      </div>
     </main>
 
     <script src="dist/main.js"></script>
