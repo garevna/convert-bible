@@ -11,17 +11,17 @@ export const variants = [
   },
   {
     title: 'American Standard Version',
-    text: 'asv.js',
+    text: 'asv',
     method: 'asv'
   },
   {
     title: 'King James Bible: Pure Cambridge Edition',
-    text: 'kjb.js',
+    text: 'kjb',
     method: 'kjb'
   },
   {
     title: 'World English Bible',
-    text: 'web.js',
+    text: 'web',
     method: 'web'
   }
 ]
